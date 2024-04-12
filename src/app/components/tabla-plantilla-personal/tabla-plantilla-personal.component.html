@@ -1,0 +1,43 @@
+<div class="row mt-3 d-flex justify-content-center">
+    <div class="col-md-11 mb-5">
+        <table class="table table-borderless">
+          
+            
+            <thead>
+                <tr ><td colspan="6" id="encabezado"> <h5 class="text-capitalize">{{TituloTabla}} </h5> </td></tr>
+                <tr id="titulos">
+                    <th scope="row">nombre</th>
+                    <th scope="row">rfc</th>
+                    <th scope="row">turno</th>
+                    <th scope="row">funcion</th>
+                    <th scope="row">estado</th>
+                    <th scope="row">detalles</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let persona of Personal">
+                    <td class="text-capitalize"> {{ persona.nombre }} {{ persona.apepat }} {{ persona.apemat }}   </td>
+                    <td> {{persona.rfc}} </td>
+                    <td> {{persona.turno}} </td>
+                    <td> {{persona.plazas[0].funcion || "desconocido"}} </td>
+                    <td>activo</td>
+                    <td class="d-flex  gap-4 align-items-center">
+<!-- vamos a crear el dropdow como un componente separado para poder reutilizarlo, para la demo lo agregare aqui en codigo -->
+<!-- <div class="dropdown">
+
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div> -->
+                        <button class="btn btn-info" type="button" (click)="emimitirCurp(persona.curp)">Detalles</button>
+                    </td>
+                </tr>
+                
+ 
+            </tbody>
+        </table>
+    </div>
+</div>

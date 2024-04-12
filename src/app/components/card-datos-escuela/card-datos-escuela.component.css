@@ -1,0 +1,84 @@
+.card{
+    border: none !important;
+}
+ .card-header{
+    background: #ccfbf1;
+    border-radius: 10px !important;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    border-radius: 10px;
+
+}
+.card-header>h2{
+    font-size: 20px;
+    padding: 5px 0px;
+}
+.card-header>p{
+    font-size: 15px;
+}
+
+.card-body{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    flex-direction: row;
+  
+ 
+}
+.escuela-contacto, .escuela-ubicacion,.escuela-servicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap ;
+    background: #fafafa;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #cbd5e1;
+}
+.cuerpo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100% !important;
+}
+.icon{
+    width: 100px;
+    color: #79152a;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon svg{
+    width: 50px;
+    height: 50px;
+}
+.escuela-contacto{
+    width: 48%;
+    margin-right: 2%;
+}
+.escuela-servicio{
+    width: 48%;
+    margin-left: 2%;
+
+}
+.escuela-ubicacion{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.row{
+    margin-right: 0px;
+    padding: 10px ;
+}
+@media(max-width:410px){
+    .escuela-contacto, .escuela-servicio{
+        width: 100%;
+    }
+    .escuela-contacto{
+        margin-bottom: 20px;
+    }
+
+}

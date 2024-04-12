@@ -1,0 +1,50 @@
+<div class="row mt-3 d-flex justify-content-center mb-4">
+    <div class="col-md-11">
+        <table class="table table-borderless">
+          
+            
+            <thead>
+                <tr ><td colspan="6" id="encabezado"> CATALOGO DE VACANCIAS</td></tr>
+                <tr id="titulos">
+                    <th scope="row">nombre</th>
+                    <th scope="row">plaza</th>
+                    <th scope="row">vigencia</th>
+                    <th scope="row">funcion</th>
+                    <th scope="row">status</th>
+                    <th scope="row">opciones</th>
+
+                </tr>
+            </thead>
+            <tbody>
+              
+                <tr *ngFor="let item of dataPrueba; let i=index">
+                    <td class="text-capitalize">  {{item.nombre}} </td>
+                    <td> {{item.cct}} </td>
+                    <td> {{item.funcion}} </td>
+                    <td> {{ item.vigencia }} </td>
+                    <td> {{item.status}} </td>
+                    <td class="d-flex  gap-4 align-items-center">
+<!-- vamos a crear el dropdow como un componente separado para poder reutilizarlo, para la demo lo agregare aqui en codigo -->
+<div class="dropdown">
+
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+
+                        <a >open</a>
+                        <button class="btn btn-info" data-bs-toggle="dropdown" aria-expanded="false" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                              </svg>
+                        </button>
+                    </td>
+                </tr>
+                
+ 
+            </tbody>
+        </table>
+    </div>
+</div>

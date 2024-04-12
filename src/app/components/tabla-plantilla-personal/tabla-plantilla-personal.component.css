@@ -1,0 +1,39 @@
+#encabezado{
+    background-color: #79152a;
+    color: #fff;
+    border-bottom: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-left: 20px;
+}
+
+#titulos{
+    border-bottom: 2px solid #ddd;
+}
+.btn{
+    background: none;
+    border: 1px solid #1d4ed8;
+    color: #1d4ed8;
+}
+.btn:hover{
+    color: white;
+    background: #1d4ed8;
+}
+
+td{
+    padding: 10px;
+    
+}
+th{
+    text-transform: capitalize;
+}
+#informacion-escuela{
+    margin-bottom: 40px;
+}
+tr{
+    border-bottom: 1px solid #ddd;
+}
+.col-md-11{
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}

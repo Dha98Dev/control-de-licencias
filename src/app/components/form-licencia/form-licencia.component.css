@@ -1,0 +1,25 @@
+#form-licencia{
+    padding: 30px 10px ;
+    border-radius: 10px;
+    margin: 60px 0px;
+}
+
+.btn-outline-danger{
+    background: #fb7185;
+    color: white;
+    border: none !important;
+  }
+  .btn-outline-danger:hover{
+    background: #9f1239;
+  }
+  .btn-outline-info{
+    color: white;
+    border:none !important;
+    background: #2dd4bf;
+  }
+  .btn-outline-info:hover{
+    background: #115e59;
+  }
+  img{
+    width: 120px;
+  }

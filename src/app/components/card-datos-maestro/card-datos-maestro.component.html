@@ -1,0 +1,32 @@
+
+
+        <div class="mt-5">
+            <div class="card card-custom">
+              <div class="card-header">
+                <h5 class="mb-0">Información del Maestro</h5>
+              </div>
+              <div class="card-body">
+                <div class="form-group mt-3">
+                  <label class="info-label">Nombre Completo:</label>
+                  <p class="mb-0"> {{Maestro[0].nombre }} {{Maestro[0].apepat}} {{Maestro[0].apemat}} </p>
+                </div>
+                <div class="form-group mt-3">
+                  <label class="info-label">RFC:</label>
+                  <p class="mb-0"> {{Maestro[0].rfc}} </p>
+                </div>
+                <div class="form-group mt-3">
+                  <label class="info-label">CURP:</label>
+                  <p class="mb-0"> {{Maestro[0].curp}} </p>
+                </div>
+              </div>
+            </div>
+            <div class="detalles mt-5 mb-5">
+              <app-tabla-plazas [Plazas]="Maestro[0].plazas" class="divider"></app-tabla-plazas>
+
+              <div class="actions d-flex  gap-5">
+                  <button class="btn btn-outline-info"  data-bs-toggle="modal" data-bs-target="#exampleModal">cargar licencia </button> 
+              </div>
+           </div>
+          </div>
+
+          <app-form-licencia></app-form-licencia>

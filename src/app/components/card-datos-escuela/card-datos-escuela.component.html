@@ -1,0 +1,46 @@
+<div class="card-body">
+  <div class=" escuela-ubicacion">
+      <h3 class="datos-header">Ubicación</h3>
+      <div class="cuerpo">
+          <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+              <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+            </svg></div>
+          <div class="cuerpo-info">
+              <p><label class="fw-medium">LOCALIDAD: </label> {{ datosEscuela.INMUEBLE_C_NOM_LOC }}</p>
+              <p><label class="fw-medium">MUNICIPIO: </label> {{ datosEscuela.INMUEBLE_C_NOM_MUN }}</p>
+              <p><label class="fw-medium" >CALLE PRINCIPAL: </label> {{ datosEscuela.INMUEBLE_C_VIALIDAD_PRINCIPAL }}</p>
+              <p><label class="fw-medium">CALLE DERECHA: </label> {{ datosEscuela.INMUEBLE_C_VIALIDAD_DERECHA }}</p>
+              <p><label class="fw-medium">CALLE IZQUIERDA: </label> {{ datosEscuela.INMUEBLE_C_VIALIDAD_IZQUIERDA }}</p>
+          </div>
+      </div>
+  </div>
+  <div class="escuela-contacto">
+      <h3 class="datos-header">Contacto</h3>
+      <div class="cuerpo">
+          <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg></div>
+          <div class="cuerpo-info">
+              <p><label class="fw-medium">PUESTO: </label> {{ datosEscuela.CONTACTO_C_CARGO }}</p>
+              <p><label class="fw-medium">NOMBRE </label> {{ datosEscuela.CONTACTO_C_NOMBRE }} {{ datosEscuela.CONTACTO_C_APELLIDO1 }} {{ datosEscuela.CONTACTO_C_APELLIDO2 }}</p>
+          </div>
+      </div>
+  </div>
+ 
+  <div class="escuela-servicio">
+      <h3 class="datos-header">Nivel de Servicio</h3>
+      <div class="cuerpo">
+          <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+              <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
+              <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
+            </svg></div>
+          <div class="cuerpo-info">
+              <p><label class="fw-medium">SERVICIO 1: </label>  {{  datosEscuela.TIPONIVELSUB_C_SERVICION1 }}</p>
+              <p><label class="fw-medium">SERVICIO 2: </label>  {{ datosEscuela.TIPONIVELSUB_C_SERVICION2 }}</p>
+              <p><label class="fw-medium">SERCICIO 3: </label> {{ datosEscuela.TIPONIVELSUB_C_SERVICION3 }}</p>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+
+
+
+    
+
+        
+<table *ngIf="centrosDeTrabajo.length>0" datatable [dtOptions]="dtOptions"  class="row-border hover" >
+    <thead>
+        <tr>
+            <th>cct</th>
+            <th>nombre</th>
+            <th>turno</th>
+            <th>municipio</th>
+            <th>localidad</th>
+            <th>detalles</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr *ngFor="let cct of centrosDeTrabajo; ">
+            <td>{{ cct.CV_CCT}}</td>
+            <td>{{ cct.C_NOMBRE}}</td>
+            <td>{{ cct.C_TURNO_1}}</td>
+            <td>{{ cct.INMUEBLE_C_NOM_MUN}}</td>
+            <td>{{ cct.INMUEBLE_C_NOM_LOC}}</td>
+            <td><button class="btn btn-info" (click)="emitCentroTrabajo(cct.CV_CCT)" type="button">Detalles</button></td>
+        </tr>
+    </tbody>
+</table>
+
+ 

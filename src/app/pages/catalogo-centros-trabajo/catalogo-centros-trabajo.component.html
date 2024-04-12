@@ -1,0 +1,11 @@
+<div class="row mb-5">
+    <app-search-box (busqueda)="buscarCentros($event)" [valorBusqueda]="busqueda" ></app-search-box>
+</div>
+<app-alert-error *ngIf="error"></app-alert-error>
+<app-loader *ngIf="loader"></app-loader>
+
+<div class="row mt-3 d-flex justify-content-center align-items-center">
+    <div class="col-md-11">
+    <app-tabla-centros-trabajos [centrosDeTrabajo]="centrosTrabajo" (onCentroTrabajo)="redireccionarAPlantillaPersonal($event)" ></app-tabla-centros-trabajos>
+</div>
+</div>

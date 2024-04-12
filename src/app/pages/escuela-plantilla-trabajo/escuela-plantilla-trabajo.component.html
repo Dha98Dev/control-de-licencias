@@ -1,0 +1,15 @@
+<!-- para la demo agregare el el alert de error en codigo, posteriormente se agregara un componente dedicado -->
+<div class="d-flex justify-content-center mt-3"><app-alert-error *ngIf="error; else correcto"></app-alert-error></div>
+
+<!-- para la demo agregare el spinner de loader en codigo, posteriormente se agregara un componente dedicado -->
+
+<app-loader  *ngIf="loader" ></app-loader>
+
+<ng-template #correcto class="row d-flex justify-content-center">
+    <app-card-datos-escuela [datosEscuela]="DatosEscuela" *ngIf="!loader" class="col-md-11"></app-card-datos-escuela>
+</ng-template>
+
+
+
+<app-tabla-plantilla-personal [Personal]="personal" *ngIf="personal.length>0" [TituloTabla]="tituloTabla"  (onEmitCurp)="detailsPerson($event)"></app-tabla-plantilla-personal>
+

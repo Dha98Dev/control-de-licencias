@@ -1,0 +1,18 @@
+<app-alert-error *ngIf="error"></app-alert-error>
+
+<app-loader *ngIf="loader"></app-loader>
+
+
+
+
+
+<div class="row d-flex justify-content-center">
+    <app-card-datos-escuela [datosEscuela]="DatosEscuela" *ngIf="!loader && !error" class="col-md-11"></app-card-datos-escuela>
+
+</div>
+
+<div class="row d-flex justify-content-center">
+    <app-card-datos-maestro class="col-md-11" [Maestro]="Personal" *ngIf="!loader && !error" ></app-card-datos-maestro>
+</div>
+
+<router-outlet></router-outlet>

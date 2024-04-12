@@ -1,0 +1,43 @@
+#encabezado{
+    background-color: #79152a;
+    color: #fff;
+    border-bottom: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-left: 20px;
+
+}
+
+.row{
+    margin-right: 0px !important;
+}
+#titulos{
+    border-bottom: 2px solid #ddd;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0px 1px 0px 0px ;
+}
+td{
+    padding: 10px;
+}
+th{
+    text-transform: capitalize;
+}
+.col-md-11{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  
+
+}

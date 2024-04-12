@@ -1,0 +1,28 @@
+
+    <div class="col-md-12">
+        <table class="table table-borderless">
+          
+            
+            <thead>
+                <tr ><td class="fw-medium text-uppercase" colspan="6" id="encabezado">plazas de {{ Plazas[0].nombre }} {{ Plazas[0].apepat}} {{ Plazas[0].apemat }} </td></tr>
+                <tr id="titulos">
+                    <th scope="row">cct</th>
+                    <th scope="row">escuela</th>
+                    <th scope="row">localidad</th>
+                    <th scope="row">turno</th>
+                    <th scope="row">plaza</th>
+                    <th scope="row">funcion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let plaza of Plazas">
+                    <td class="text-capitalize"> {{plaza.cct}} </td>
+                    <td> {{plaza.nombreescuela}} </td>
+                    <td> {{plaza.localidad}} </td>
+                    <td> {{plaza.turno}} </td>
+                    <td> {{plaza.plaza}} </td>
+                    <td> {{plaza.funcion}} </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

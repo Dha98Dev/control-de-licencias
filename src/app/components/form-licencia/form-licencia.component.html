@@ -1,0 +1,45 @@
+
+
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-capitalize" id="exampleModalLabel"><img src="./../assets/logo.jpeg" class="ml-5" alt="logo"> cargar licencia</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="col-md-11" id="form-licencia" action="#">
+            <div class="mb-3 row">
+                <label for="fechaInicio" class="col-sm-3 col-form-label text-uppercase" >inicio</label>
+                <div class="col-sm-9">
+                  <input type="date"  class="form form-control" id="fechaInicio" value="email@example.com">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="fechaFin" class="col-sm-3 col-form-label text-uppercase">fin</label>
+                <div class="col-sm-9">
+                  <input type="date"  class="form form-control" id="fechaFin" value="email@example.com">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-3 col-form-label text-uppercase">motivo</label>
+                <div class="col-sm-9">
+                 <select name="" id="" class="form form-select">
+                    <option value="">maternidad</option>
+                    <option value="">paternidad</option>
+                    <option value="">medico</option>
+                    <option value="">otro</option>
+                 </select>
+                </div>
+              </div>
+              <div class="boton d-flex justify-content-center">
+                <button type="button" class="btn btn-outline-info">Guardar Licencia </button>
+              </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
